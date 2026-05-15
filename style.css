@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black:        #0d0d0d;   /* Fundo principal */
+    --white:        #f5f0e8;   /* Texto principal (off-white quente) */
+    --orange:       #f4600c;   /* Cor de destaque primária */
+    --orange-dark:  #c44a07;   /* Laranja hover / botões pressionados */
+    --orange-light: #ff7f3e;   /* Laranja suave para tags e badges */
+    --gray:         #1a1a1a;   /* Fundo de seções alternadas */
+    --gray-mid:     #2e2e2e;   /* Bordas e detalhes do SVG */
+    --text-muted:   #888888;   /* Textos secundários / legendas */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* RESETS */
+a, li{
+    outline: none;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* HILIGHTS */
+.highlight{
+    color: var(--orange);
+}
+
+/*ZAP CONTACT*/
+.zap-contact{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 10px 1px rgba(14, 232, 14, 0.5);
+    right: 5%;
+    bottom: 5%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* _______________________________________ */
+/* _______________ B O D Y _______________ */
+/* _______________________________________ */
+body{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* _______________________________________ */
+/* _____________ H E A D E R _____________ */
+/* _______________________________________ */
+header{
+    background: rgba(19, 19, 19, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* Safari */
+    border-bottom: 1px solid var(--gray);
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Links list */
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+header ul li{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--orange-dark);
+}
+
+/* Menu icon */
+header img{
+    width: 30px;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+/* _______________________________________ */
+/* _______________ M A I N _______________ */
+/* _______________________________________ */
+
+
+/* _______________________________________ */
+/* _______________ H O M E _______________ */
+/* _______________________________________ */
+main .home{
+    background: linear-gradient(180deg, rgb(17, 17, 17), rgb(32, 32, 32));
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 0 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .home .fiorino-img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .home .fiorino-img{
+    margin-top: 72px;
+    width: 350px;
+    border: 1px solid var(--gray-mid);
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+main .home h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+}
+
+main .home .fretes-e-transportes-container{
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+main .home .home-text{
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+main .home button{
+    height: 45px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+}
+
+main .home .frete-button{
+    background-color: var(--orange);
+    border: none;
+    box-shadow: 0px 10px 0 0 var(--orange-dark);
+}
+
+main .home .services-button{
+    background-color: transparent;
+    border: 1px solid rgb(90, 90, 90);
+    box-shadow: 0px 10px 0 0 rgb(59, 59, 59);
+}
+
