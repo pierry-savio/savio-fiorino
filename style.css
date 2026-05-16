@@ -114,6 +114,26 @@ section {
     font-style: normal;
 }
 
+/*MAP*/
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    /* Largura máxima do mapa */
+    height: 400px;
+    /* Altura fixa do mapa */
+    position: relative;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
 /* _______________________________________ */
 /* _______________ B O D Y _______________ */
 /* _______________________________________ */
@@ -405,4 +425,38 @@ main .special .car-information-container .car-information-title {
     border-radius: 3px;
     font-size: 30px;
     transform: translateY(-39px);
+}
+
+/* _______________________________________ */
+/* ________ O N D E  A T E N D O _________ */
+/* _______________________________________ */
+
+main .where-i-work {
+    padding-top: 50px;
+    background-color: var(--gray-mid);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main .where-i-work .sao-paulo-map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .where-i-work .sao-paulo-map-container .sao-paulo-map-container-title-description {
+    text-align: center;
+}
+
+main .where-i-work .sao-paulo-map-container .sao-paulo-map-container-title-description h3 {
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+main .where-i-work .sao-paulo-map-container .sao-paulo-map-container-title-description h4 {
+    color: white;
+    letter-spacing: 5px;
 }
