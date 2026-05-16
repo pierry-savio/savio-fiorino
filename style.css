@@ -1,41 +1,50 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 :root {
-    --black:        #0d0d0d;   /* Fundo principal */
-    --white:        #f5f0e8;   /* Texto principal (off-white quente) */
-    --orange:       #f4600c;   /* Cor de destaque primária */
-    --orange-dark:  #c44a07;   /* Laranja hover / botões pressionados */
-    --orange-light: #ff7f3e;   /* Laranja suave para tags e badges */
-    --gray:         #1a1a1a;   /* Fundo de seções alternadas */
-    --gray-mid:     #2e2e2e;   /* Bordas e detalhes do SVG */
-    --text-muted:   #888888;   /* Textos secundários / legendas */
+    --black: #0d0d0d;
+    /* Fundo principal */
+    --white: #f5f0e8;
+    /* Texto principal (off-white quente) */
+    --orange: #f4600c;
+    /* Cor de destaque primária */
+    --orange-dark: #c44a07;
+    /* Laranja hover / botões pressionados */
+    --orange-light: #ff7f3e;
+    /* Laranja suave para tags e badges */
+    --gray: #1a1a1a;
+    /* Fundo de seções alternadas */
+    --gray-mid: #2e2e2e;
+    /* Bordas e detalhes do SVG */
+    --text-muted: #888888;
+    /* Textos secundários / legendas */
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /* RESETS */
-a, li{
+a,
+li {
     outline: none;
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
 /* HILIGHTS */
-.highlight{
+.highlight {
     color: var(--orange);
 }
 
 /*ZAP CONTACT*/
-.zap-contact{
+.zap-contact {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -48,41 +57,41 @@ li{
     transform: .3s ease;
 }
 
-.zap-contact:hover{
+.zap-contact:hover {
     transform: scale(1.02);
 }
 
-.zap-contact:active{
+.zap-contact:active {
     transform: scale(1);
 }
 
 /*LINE*/
-.line{
+.line {
     margin: 30px 0 30px 0;
     border-bottom: 1px solid var(--gray-mid);
 }
 
 /*SECTIONS*/
-section{
+section {
     color: white;
     padding: 0 20px 50px 20px;
 }
 
 /*SECTION ABOUT*/
-.section-about{
+.section-about {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
 }
 
 /*SECTION P*/
-.section-p{
+.section-p {
     color: #d8d8d8;
     font-weight: 400;
 }
 
 /*SECTION TITLE CONTAINER*/
-.section-title-container{
+.section-title-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +100,7 @@ section{
 }
 
 /*SECTION-TITLE*/
-.section-title{
+.section-title {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -99,7 +108,7 @@ section{
     line-height: 38px;
 }
 
-.title{
+.title {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -108,7 +117,7 @@ section{
 /* _______________________________________ */
 /* _______________ B O D Y _______________ */
 /* _______________________________________ */
-body{
+body {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -118,10 +127,11 @@ body{
 /* _______________________________________ */
 /* _____________ H E A D E R _____________ */
 /* _______________________________________ */
-header{
+header {
     background: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); /* Safari */
+    -webkit-backdrop-filter: blur(5px);
+    /* Safari */
     border-bottom: 1px solid var(--gray);
     position: fixed;
     width: 100%;
@@ -134,14 +144,14 @@ header{
 }
 
 /* Links list */
-header ul{
+header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px 10px 20px;
 }
 
-header ul li{
+header ul li {
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -150,7 +160,7 @@ header ul li{
 }
 
 /* Menu icon */
-header img{
+header img {
     width: 30px;
     filter: brightness(0) invert(1);
     cursor: pointer;
@@ -164,7 +174,7 @@ header img{
 /* _______________________________________ */
 /* _______________ H O M E _______________ */
 /* _______________________________________ */
-main .home{
+main .home {
     background: linear-gradient(180deg, rgb(17, 17, 17), rgb(32, 32, 32));
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,14 +183,14 @@ main .home{
     gap: 30px;
 }
 
-main .home .fiorino-img-container{
+main .home .fiorino-img-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main .home .fiorino-img{
+main .home .fiorino-img {
     margin-top: 59.2px;
     width: 100vw;
     border: 1px solid var(--gray-mid);
@@ -188,7 +198,7 @@ main .home .fiorino-img{
     border-radius: 0 0 40px 40px;
 }
 
-main .home h1{
+main .home h1 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -196,7 +206,7 @@ main .home h1{
     font-size: 50px;
 }
 
-main .home .fretes-e-transportes-container{
+main .home .fretes-e-transportes-container {
     background-color: var(--orange-dark);
     display: flex;
     justify-content: center;
@@ -210,12 +220,12 @@ main .home .fretes-e-transportes-container{
     border-radius: 2px;
 }
 
-main .home .home-text{
+main .home .home-text {
     line-height: 26px;
     color: rgba(255, 255, 255, 0.8);
 }
 
-main .home a button{
+main .home a button {
     height: 45px;
     color: white;
     font-weight: 700;
@@ -225,41 +235,42 @@ main .home a button{
     width: 100%;
 }
 
-main .home a .frete-button{
+main .home a .frete-button {
     background-color: var(--orange);
     border: none;
     box-shadow: 0px 10px 0 0 var(--orange-dark);
     transition: .1s ease;
 }
 
-main .hom a .frete-button:hover{
+main .home a .frete-button:hover {
     background-color: var(--orange-light);
 }
 
-main .home a .frete-button:active{
+main .home a .frete-button:active {
     background-color: var(--orange-light);
     transform: translateY(10px);
-    box-shadow:  0 0 0 0 var(--orange-dark);
+    box-shadow: 0 0 0 0 var(--orange-dark);
 }
 
-main .home a .services-button{
+main .home a .services-button {
     background-color: transparent;
     border: 1px solid rgb(90, 90, 90);
     box-shadow: 0px 10px 0 0 rgb(59, 59, 59);
     transition: .1s ease;
 }
 
-main .home a .services-button:hover{
+main .home a .services-button:hover {
     background-color: rgb(44, 44, 44);
 }
 
-main .home a .services-button:active{
-    background-color: rgb(59, 59, 59);;
-    box-shadow:  0 0 0 0 rgb(59, 59, 59);
+main .home a .services-button:active {
+    background-color: rgb(59, 59, 59);
+    ;
+    box-shadow: 0 0 0 0 rgb(59, 59, 59);
     transform: translateY(10px);
 }
 
-main .home .status-container{
+main .home .status-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
@@ -267,11 +278,11 @@ main .home .status-container{
     gap: 15px;
 }
 
-main .home .status-container .status .status-title{
+main .home .status-container .status .status-title {
     font-size: 25px;
 }
 
-main .home .status-container .status .status-p{
+main .home .status-container .status .status-p {
     font-size: 15px;
 }
 
@@ -279,7 +290,7 @@ main .home .status-container .status .status-p{
 /* ___________ S E R V I C E S ___________ */
 /* _______________________________________ */
 
-main .services{
+main .services {
     background-color: var(--gray-mid);
     padding-top: 50px;
     display: flex;
@@ -287,14 +298,14 @@ main .services{
     gap: 50px;
 }
 
-main .services-container{
+main .services-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
     gap: 1rem;
 }
 
-main .services-container .service{
+main .services-container .service {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -310,24 +321,24 @@ main .services-container .service{
     transition: .3s ease;
 }
 
-main .services-container .service:hover{
+main .services-container .service:hover {
     border-bottom: 4px solid var(--orange);
     background-color: rgb(36, 36, 36);
     transform: scale(1.01);
 }
 
-main .services-container .service .service-icon{
+main .services-container .service .service-icon {
     font-size: 40px;
 }
 
-main .services-container .service .service-title{
+main .services-container .service .service-title {
     font-size: 30px;
 }
 
 /* _______________________________________ */
 /* ____________ S P E C I A L ____________ */
 /* _______________________________________ */
-main .special{
+main .special {
     padding-top: 50px;
     background: linear-gradient(180deg, rgb(17, 17, 17), rgb(32, 32, 32));
     display: flex;
@@ -335,14 +346,14 @@ main .special{
     gap: 50px;
 }
 
-main .special .qualities-container{
+main .special .qualities-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 25px;
     gap: 1rem;
 }
 
-main .special .qualities-container .quality{
+main .special .qualities-container .quality {
     background-color: #2f1b10;
     border: 1px solid #c44a07;
     box-shadow: 0 0 8px 1px rgba(196, 74, 7, 0.3);
@@ -351,12 +362,12 @@ main .special .qualities-container .quality{
     transition: .3s ease;
 }
 
-main .special .qualities-container .quality:hover{
+main .special .qualities-container .quality:hover {
     background-color: #392012;
     transform: scale(1.02);
 }
 
-main .special .car-information-container{
+main .special .car-information-container {
     border: 1px solid rgba(244, 96, 12, 0.4);
     background-color: var(--gray);
     border-radius: 8px;
@@ -367,7 +378,7 @@ main .special .car-information-container{
 
 }
 
-main .special .car-information-container .car-information-item{
+main .special .car-information-container .car-information-item {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2px;
@@ -378,7 +389,7 @@ main .special .car-information-container .car-information-item{
     border-radius: 8px;
 }
 
-main .special .car-information-container .car-information-item-icon{
+main .special .car-information-container .car-information-item-icon {
     font-size: 30px;
     border: 1px solid var(--orange);
     background-color: rgba(244, 96, 12, 0.4);
@@ -387,7 +398,7 @@ main .special .car-information-container .car-information-item-icon{
     border-radius: 5px;
 }
 
-main .special .car-information-container .car-information-title{
+main .special .car-information-container .car-information-title {
     background-color: var(--orange);
     width: 50%;
     text-align: center;
