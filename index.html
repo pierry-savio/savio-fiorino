@@ -37,6 +37,12 @@
                 </a>
                 <li><img src="./img/menu_icon.png" alt="menu icon"></li>
             </ul>
+
+            <div class="nav-hamburguer">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -56,7 +62,7 @@
             <p class="home-text">Transporte rápido, seguro e com amplo conhecimento das ruas de São Paulo e Interiror.
                 Sua carga nas mãos certas.</p>
 
-            <a href="#home">
+            <a href="#call-me">
                 <button class="frete-button">SOLICITAR FRETE 📦</button>
             </a>
 
@@ -263,10 +269,42 @@
                 <p class="section-p">Entre em contato agora mesmo pelo WhatsApp. Atendimento rápido, sem complicação,
                     com o cuidado que sua carga merece.</p>
             </div>
-            <a href="https://wa.me/5511980950396">
-                <button class="call-me-button">Chamar no WhatsApp</button>
-            </a>
-            <p>CNPJ: 53.759.721/0001-46 · Direção Defensiva & MOP Certificado</p>
+
+            <!--FORM-->
+            <div class="form">
+                <div class="input-container">
+                    <label for="i_nome">Seu nome</label>
+                    <input type="text" id="i_nome" placeholder="João Paulo">
+                </div>
+
+                <div class="input-container">
+                    <label for="i_partida">Local de Partida</label>
+                    <input type="text" id="i_partida" placeholder="São Paulo">
+                </div>
+
+                <div class="input-container">
+                    <label for="i_destino">Destino</label>
+                    <input type="text" id="i_destino" placeholder="São Paulo">
+                </div>
+
+                <div class="input-container">
+                    <label for="i_tipo_de_carga">Tipo de Carga</label>
+                    <select id="tipo_de_carga">
+                        <option value="Mudanças & Mobília">Mudanças & Mobília</option>
+                        <option value="Comércio & Entregas">Comércio & Entregas</option>
+                        <option value="Construção & Reforma">Construção & Reforma</option>
+                        <option value="Alimentação & Perecíveis">Alimentação & Perecíveis</option>
+                        <option value="Frágeis & Especiais">Frágeis & Especiais</option>
+                        <option value="Eventos & Produção">Eventos & Produção</option>
+                    </select>
+                </div>
+
+                <button class="call-me-button" id="call_me_button"><img src="./img/whatsapp.png" alt="whatsapp icon" class="call-me-zap-icon"> Chamar no WhatsApp</button>
+
+            </div>
+
+            
+            <p class="call-me-cnpj">CNPJ: 53.759.721/0001-46 · Direção Defensiva & MOP Certificado</p>
         </section>
     </main>
 
@@ -274,7 +312,9 @@
     <!-- _________________F O O T E R__________________ -->
     <!-- ______________________________________________ -->
     <footer>
-
+        <h2 class="title highlight">SAVIO FIORINO</h2>
+        <p class="footer-p1">Fretes & Transportes · São Paulo e Interior Fiorino 2020 · Capacidade 600 kg / 3 m³</p>
+        <p class="footer-p2">CNPJ 53.759.721/0001-46</p>
     </footer>
 
     <script src="script.js"></script>
