@@ -30,13 +30,14 @@ const hamburguer = document.getElementById("hamburguer");
 
 menu_icon.addEventListener('click', () => {
 
-    if (hamburguer.classList.contains("opened")){
-        hamburguer.classList.add("closed");
-        hamburguer.classList.remove("opened");
-    }
-    else{
+    if (hamburguer.classList.contains("closed")){
         hamburguer.classList.add("opened");
         hamburguer.classList.remove("closed");
+    }
+    else{
+        
+        hamburguer.classList.add("closed");
+        hamburguer.classList.remove("opened");
     }
     
 });
