@@ -48,21 +48,49 @@ li {
     position: fixed;
     width: 50px;
     height: 50px;
-    box-shadow: 0 0 10px 1px rgba(14, 232, 14, 0.5);
+    
     right: 5%;
     bottom: 5%;
     border-radius: 50%;
     cursor: pointer;
     z-index: 999;
-    transform: .3s ease;
+    transition: .3s ease;
+
+    animation-name: zap-shadow;
+    animation-duration: 5s; /* Duração de 3 segundos */
+    animation-iteration-count: infinite; /* Faz a animação repetir infinitamente */
 }
 
 .zap-contact:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 
 .zap-contact:active {
     transform: scale(1);
+}
+
+@keyframes zap-shadow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 4px 1px rgba(14, 232, 14, 0.1);
+  }
+  20% {
+    box-shadow: 0 0 6px 1px rgba(14, 232, 14, 0.2);
+  }
+  40% {
+    box-shadow: 0 0 8px 1px rgba(14, 232, 14, 0.3);
+  }
+  60% {
+    transform: scale(1.15);
+    box-shadow: 0 0 12px 1px rgba(14, 232, 14, 0.8);
+  }
+  80% {
+    box-shadow: 0 0 8px 1px rgba(14, 232, 14, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 4px 1px rgba(14, 232, 14, 0.2);
+  }
 }
 
 /*LINE*/
