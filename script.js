@@ -23,3 +23,20 @@ call_me_button.addEventListener('click', () => {
 
     window.open(`https://wa.me/5511980950396?text=${message}`, '_blank');
 });
+
+
+const menu_icon = document.getElementById("menu_icon");
+const hamburguer = document.getElementById("hamburguer");
+
+menu_icon.addEventListener('click', () => {
+
+    if (hamburguer.classList.contains("opened")){
+        hamburguer.classList.add("closed");
+        hamburguer.classList.remove("opened");
+    }
+    else{
+        hamburguer.classList.add("opened");
+        hamburguer.classList.remove("closed");
+    }
+    
+});
