@@ -4,6 +4,9 @@
 
 **🔗 Acesse o site:** [pierry-savio.github.io/savio-fiorino](https://pierry-savio.github.io/savio-fiorino/)
 
+![Preview](./img/preview_2.png)
+![Preview 2](./img/preview.png)
+
 ---
 
 ## 📋 Sobre o Projeto
