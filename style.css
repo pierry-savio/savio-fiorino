@@ -746,6 +746,11 @@ select {
   transition: 0.3s ease;
 }
 
+select option {
+  background-color: rgb(31, 31, 31);
+  border: none;
+}
+
 main .call-me .form input:hover,
 select:hover {
   border: 1px solid var(--orange);
